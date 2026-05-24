@@ -74,7 +74,7 @@ HOME_TEMPLATE = """
 </body>
 </html>
 """
-
+print("hi")
 @app.route("/", methods=["GET"])
 def home():
     return render_template_string(HOME_TEMPLATE, nail_salons=nail_salons)
